@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      th,
+      td {
+        border: 1px solid black
+      }
+    </style>
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <h1>Calcul de l'IMC</h1>
+  <img id="big" class="dipslayed" src="big.png" width="150" height=200 onmouseover="change()" onmouseout="change2()"></img>
+
+  <body>
+    
+    <form>
+      
+      Prenom : <input id="pre" type="text" >
+      <br><br>Ann�e de Naissance : <input id="an" type="var" >
+
+    </form>
+    <br><br> 
+    <button onclick="age()"> Votre �ge </button>
+    <li id="ans"></li>
+    
+    <form>
+      <br><br> Je suis : une femme <input id="sexf" name="sexe"  type="radio" value="f" checked > un homme <input id="sexm"  name="sexe" type="radio" value="h" >
+      <br><br>Taille en cm : <input id="t" type="text" >
+      <br><br>Masse en kg : <input id="m" type="text" >  
+    </form>
+    <button onclick="etat()">Soumettre</button>
+    <p id="calc"></p>
+    <p id="state"></p>
+    <p id="img"></p>
+    <table id= "tableau"  style = display:none>
+      <tr>
+        <th></th>
+        <th>age</th>
+        <th>sexe</th>
+        <th>IMC</th>
+        <th>IMG</th>
+      </tr>
+      <tr>
+        <th id ="prenom"></th>
+        <td id="age"></td>
+        <td id = "sexe"></td>
+        <td id = "imc"></td>
+        <td id = "i"></td>
+      </tr>
+    </table>
+    
+  </body>
+</html>
